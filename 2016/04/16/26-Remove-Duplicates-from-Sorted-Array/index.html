@@ -63,7 +63,7 @@
 <meta property="og:url" content="www.chengliustduio.com/2016/04/16/26-Remove-Duplicates-from-Sorted-Array/index.html">
 <meta property="og:site_name" content="ChengLiu's Blog">
 <meta property="og:description" content="Given a sorted array, remove the duplicates in place such that each element appear only once and return the new length.Do not allocate extra space for another array, you must do this in place with con">
-<meta property="og:updated_time" content="2016-04-16T20:20:23.000Z">
+<meta property="og:updated_time" content="2016-04-16T20:21:26.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="26. Remove Duplicates from Sorted Array">
 <meta name="twitter:description" content="Given a sorted array, remove the duplicates in place such that each element appear only once and return the new length.Do not allocate extra space for another array, you must do this in place with con">
@@ -254,24 +254,7 @@
 
       
         <p>Given a sorted array, remove the duplicates in place such that each element appear only once and return the new length.<br>Do not allocate extra space for another array, you must do this in place with constant memory.<br>For example,<br>Given input array nums = \<1,1,2\>,<br>Your function should return length = 2, with the first two elements of nums being 1 and 2 respectively. It doesn’t matter what you leave beyond the new length.</1,1,2\></p>
-<p><code>`C++`
-Class Solution{
-public: 
-int removeDuplicates(vector\&lt;int\&gt;&amp; nums)
-{
-int size = nuts.size();
-int index = 0;
-if(size == 0)
-return 0;
-for(int i = 1;  i \&lt; size; i++)
-{
-if(nums[index] != nums[i])
-nums[++index] = nums[i];
-}
-return index+1;
-}
-}</code></p>
-
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">Class Solution&#123;</span><br><span class="line">public: </span><br><span class="line">int removeDuplicates(vector\&lt;int\&gt;&amp; nums)</span><br><span class="line">&#123;</span><br><span class="line">int size = nuts.size();</span><br><span class="line">int index = 0;</span><br><span class="line">if(size == 0)</span><br><span class="line">return 0;</span><br><span class="line">for(int i = 1;  i \&lt; size; i++)</span><br><span class="line">&#123;</span><br><span class="line">if(nums[index] != nums[i])</span><br><span class="line">nums[++index] = nums[i];</span><br><span class="line">&#125;</span><br><span class="line">return index+1;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">`</span><br></pre></td></tr></table></figure>
       
     </div>
 
