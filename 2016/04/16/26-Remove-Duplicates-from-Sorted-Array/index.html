@@ -63,7 +63,7 @@
 <meta property="og:url" content="www.chengliustduio.com/2016/04/16/26-Remove-Duplicates-from-Sorted-Array/index.html">
 <meta property="og:site_name" content="ChengLiu's Blog">
 <meta property="og:description" content="Given a sorted array, remove the duplicates in place such that each element appear only once and return the new length.Do not allocate extra space for another array, you must do this in place with con">
-<meta property="og:updated_time" content="2016-04-17T04:47:48.000Z">
+<meta property="og:updated_time" content="2016-04-17T04:52:58.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="26. Remove Duplicates from Sorted Array">
 <meta name="twitter:description" content="Given a sorted array, remove the duplicates in place such that each element appear only once and return the new length.Do not allocate extra space for another array, you must do this in place with con">
@@ -254,7 +254,23 @@
 
       
         <p>Given a sorted array, remove the duplicates in place such that each element appear only once and return the new length.<br>Do not allocate extra space for another array, you must do this in place with constant memory.<br>For example,<br>Given input array nums = \&lt;\1,1,2>\,<br>Your function should return length = 2, with the first two elements of nums being 1 and 2 respectively. It doesn’t matter what you leave beyond the new length.</p>
-<p><code>`` C++</code><br>Class Solution{<br>public:<br>int removeDuplicates(vector\<int\>&amp; nums)<br>{<br>int size = nuts.size();<br>int index = 0;<br>if(size == 0)<br>return 0;<br>for(int i = 1;  i \&lt;\ size; i++)<br>{<br>if(nums[index] != nums[i])<br>nums[++index] = nums[i];<br>}<br>return index+1;<br>}<br>}<br>````</int\></p>
+<p><code>`C++
+Class Solution{
+public: 
+int removeDuplicates(vector\&lt;int\&gt;&amp; nums)
+{
+int size = nuts.size();
+int index = 0;
+if(size == 0)
+return 0;
+for(int i = 1;  i \&lt;\ size; i++)
+{
+if(nums[index] != nums[i])
+nums[++index] = nums[i];
+}
+return index+1;
+}
+}</code> `</p>
 
       
     </div>
