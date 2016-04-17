@@ -63,7 +63,7 @@
 <meta property="og:url" content="www.chengliustduio.com/2016/04/12/191-Number-of-1-Bits/index.html">
 <meta property="og:site_name" content="ChengLiu's Blog">
 <meta property="og:description" content="Write a function that takes an unsigned integer and returns the number of ’1’ bits it has (also known as the Hamming weight).For example, the 32-bit integer ’11’ has binary representation 000000000000">
-<meta property="og:updated_time" content="2016-04-16T20:07:06.000Z">
+<meta property="og:updated_time" content="2016-04-17T04:35:08.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="191. Number of 1 Bits">
 <meta name="twitter:description" content="Write a function that takes an unsigned integer and returns the number of ’1’ bits it has (also known as the Hamming weight).For example, the 32-bit integer ’11’ has binary representation 000000000000">
@@ -256,9 +256,11 @@
         <p>Write a function that takes an unsigned integer and returns the number of ’1’ bits it has (also known as the Hamming weight).<br>For example, the 32-bit integer ’11’ has binary representation 00000000000000000000000000001011, so the function should return 3.</p>
 <blockquote>
 <ul>
-<li>将n转换成二进制即可<br>```<br>`class Solution<br>{<br>public:<br>int hammingWeight(unit32t  n)<br>{<br>int count = 0;<br>while(n)<br>{<br>//先求余数<br>int t = n%2;<br>if(t)<br>count++;<br>n = ( n - t ) / 2;<br>}<br>return count;<br>}<br>}<br>````</li>
+<li>将n转换成二进制即可</li>
 </ul>
 </blockquote>
+<p><code>
+</code>class Solution<br>{<br>public:<br> int hammingWeight(unit32t  n)<br>{<br> int count = 0;<br> while(n)<br>{<br>  //先求余数<br>  int t = n%2;<br>  if(t)<br>  count++;<br>  n = ( n - t ) / 2;<br>  }<br>  return count;<br>  }<br>}<br>``</p>
 
       
     </div>
