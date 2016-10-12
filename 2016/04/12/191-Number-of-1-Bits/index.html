@@ -63,7 +63,7 @@
 <meta property="og:url" content="www.chengliustduio.com/2016/04/12/191-Number-of-1-Bits/index.html">
 <meta property="og:site_name" content="ChengLiu's Blog">
 <meta property="og:description" content="Write a function that takes an unsigned integer and returns the number of ’1’ bits it has (also known as the Hamming weight).For example, the 32-bit integer ’11’ has binary representation 000000000000">
-<meta property="og:updated_time" content="2016-04-17T04:47:17.000Z">
+<meta property="og:updated_time" content="2016-10-11T09:54:14.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="191. Number of 1 Bits">
 <meta name="twitter:description" content="Write a function that takes an unsigned integer and returns the number of ’1’ bits it has (also known as the Hamming weight).For example, the 32-bit integer ’11’ has binary representation 000000000000">
@@ -226,7 +226,7 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-04-12T14:14:05-04:00" content="2016-04-12">
+            <time itemprop="dateCreated" datetime="2016-04-12T14:14:05-07:00" content="2016-04-12">
               2016-04-12
             </time>
           </span>
@@ -259,7 +259,7 @@
 <li>将n转换成二进制即可</li>
 </ul>
 </blockquote>
-<p><code>`` C++</code><br>class Solution<br>{<br>public:<br> int hammingWeight(unit32t  n)<br>{<br> int count = 0;<br> while(n)<br>{<br>  //先求余数<br>  int t = n%2;<br>  if(t)<br>  count++;<br>  n = ( n - t ) / 2;<br>  }<br>  return count;<br>  }<br>}<br>````</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> Solution</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line"> <span class="function"><span class="keyword">int</span> <span class="title">hammingWeight</span><span class="params">(unit32t  n)</span></span><br><span class="line"></span>&#123;</span><br><span class="line"> <span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line"> <span class="keyword">while</span>(n)</span><br><span class="line">&#123;</span><br><span class="line">  <span class="comment">//先求余数</span></span><br><span class="line">  <span class="keyword">int</span> t = n%<span class="number">2</span>;</span><br><span class="line">  <span class="keyword">if</span>(t)</span><br><span class="line">  count++;</span><br><span class="line">  n = ( n - t ) / <span class="number">2</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> count;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -361,7 +361,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-count">6</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>
